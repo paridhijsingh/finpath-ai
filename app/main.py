@@ -474,7 +474,20 @@ def _wordmark() -> None:
         'Fin<span style="color:var(--orange)">Path</span></p>'
         '<p style="font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;'
         'text-transform:uppercase;color:var(--dim);margin:.2rem 0 0">'
-        'IBM SkillsBuild · Banking &amp; Financial Services</p></div>',
+        'IBM SkillsBuild · Banking &amp; Financial Services</p>'
+        '<div style="display:inline-flex;align-items:center;gap:.45rem;margin-top:.55rem;'
+        'padding:.28rem .7rem;background:rgba(15,98,254,.10);border:1px solid rgba(15,98,254,.30);'
+        'border-radius:4px">'
+        '<svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">'
+        '<rect width="32" height="32" rx="4" fill="#0F62FE"/>'
+        '<text x="16" y="22" text-anchor="middle" font-family="IBM Plex Sans,Arial,sans-serif" '
+        'font-size="14" font-weight="700" fill="#ffffff">w</text>'
+        '</svg>'
+        '<span style="font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;'
+        'text-transform:uppercase;color:#5B9BD5;font-weight:600">'
+        'Powered by IBM watsonx Orchestrate</span>'
+        '</div>'
+        '</div>',
         unsafe_allow_html=True,
     )
 
@@ -1700,8 +1713,21 @@ def render_step3() -> None:
         '<h2 style="font:italic 400 1.65rem/1.1 var(--serif);margin:0 0 .2rem">'
         'Your <span style="color:var(--orange)">results</span></h2>'
         '<p style="font-family:var(--mono);font-size:.62rem;letter-spacing:.05em;'
-        'text-transform:uppercase;color:var(--muted);margin-bottom:1rem">'
-        'Step 3 of 3 · Illustrative projections — not financial advice</p>',
+        'text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">'
+        'Step 3 of 3 · Illustrative projections — not financial advice</p>'
+        '<div style="display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1rem;'
+        'padding:.32rem .85rem;background:rgba(15,98,254,.08);border:1px solid rgba(15,98,254,.28);'
+        'border-radius:4px">'
+        '<svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">'
+        '<rect width="32" height="32" rx="4" fill="#0F62FE"/>'
+        '<text x="16" y="22" text-anchor="middle" font-family="IBM Plex Sans,Arial,sans-serif" '
+        'font-size="14" font-weight="700" fill="#ffffff">w</text>'
+        '</svg>'
+        '<span style="font-family:var(--mono);font-size:.62rem;letter-spacing:.07em;color:#5B9BD5;font-weight:600">'
+        'AI · IBM watsonx Orchestrate</span>'
+        '<span style="font-family:var(--mono);font-size:.58rem;color:var(--dim)">·</span>'
+        '<span style="font-family:var(--mono);font-size:.58rem;color:var(--dim)">ReAct agent · 12 verified tools</span>'
+        '</div>',
         unsafe_allow_html=True,
     )
 
