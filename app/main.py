@@ -982,7 +982,11 @@ h1 span{{color:var(--orange)}}
 
   <!-- Top block: brand + hero copy + CTA -->
   <div>
-    <p style="font-family:'Courier New',monospace;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:#6B737D;margin:0 0 1.6rem">IBM SkillsBuild &middot; Banking &amp; Financial Services</p>
+    <p style="font-family:'Courier New',monospace;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:#6B737D;margin:0 0 .7rem">IBM SkillsBuild &middot; Banking &amp; Financial Services</p>
+    <div style="display:inline-flex;align-items:center;gap:.45rem;margin-bottom:1.6rem;padding:.28rem .7rem;background:rgba(15,98,254,.12);border:1px solid rgba(15,98,254,.35);border-radius:4px">
+      <svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0F62FE"/><text x="16" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#ffffff">w</text></svg>
+      <span style="font-family:'Courier New',monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:#5B9BD5;font-weight:600">Powered by IBM watsonx Orchestrate</span>
+    </div>
 
     <!-- Title -->
     <h1>FinPath <span>AI</span></h1>
