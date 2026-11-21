@@ -49,9 +49,58 @@ tests/
   test_health_check.py  Unit tests for financial_health_check (35 tests)
   smoke_test.py      E2E tests (requires live Orchestrate token)
 tools/
-  core/finance.py    Pure Python math — no ADK imports, stdlib only
-  *_tool.py          Thin @tool wrappers over tools/core/
+  core/finance.py        Pure Python math — no ADK imports, stdlib only
+  *_tool.py              Thin @tool wrappers over tools/core/
+  generate_profile.py    CLI profile generator (interactive + --preset)
 ```
+
+---
+
+## Generating sample profiles
+
+[`tools/generate_profile.py`](tools/generate_profile.py) creates ready-to-upload FinPath AI profile JSON files.
+No credentials are required — it is pure Python with no dependencies beyond the standard library.
+
+### Usage
+
+**Interactive mode** — walks you through every field with defaults you can override by typing a new value:
+
+```bash
+python tools/generate_profile.py
+```
+
+**Preset mode** — skips the prompts and writes a fully-formed profile in one step:
+
+```bash
+python tools/generate_profile.py --preset young
+```
+
+**List all presets:**
+
+```bash
+python tools/generate_profile.py --list
+```
+
+### Built-in presets
+
+| Preset | Description |
+|---|---|
+| `young` | Young professional, entry-level salary, small emergency fund |
+| `family` | Dual-income family, mortgage, kids, college savings |
+| `highdebt` | High debt load, credit cards, tight budget |
+| `investor` | High earner, aggressive investing, minimal debt |
+| `retiree` | Near-retirement, fixed income, focus on wealth preservation |
+
+### Output
+
+The script writes a `.json` file to the [`data/`](data/) directory and prints the path, e.g.:
+
+```
+✅ Profile saved → data/finpath_profile_young.json
+   Upload it in FinPath AI via '⬆ Upload a saved FinPath AI profile (JSON)'
+```
+
+Upload the file in the app using the **"⬆ Upload a saved FinPath AI profile (JSON)"** button on the sidebar.
 
 ---
 
